@@ -9,16 +9,6 @@ WaterGuardEdge is an integrated IoT project for real-time water usage, quality, 
 
 WaterGuardEdge consists of hardware components (ESP8266, sensors), edge logging (Raspberry Pi), data streaming/logging, and advanced analytics via AI/LLM modules.
 
-```mermaid
-flowchart TD
-    A[ESP8266 + Sensors] -->|MQTT| B[Data Logger (Raspberry Pi)]
-    B -->|Firebase RTDB| C[Cloud Database]
-    C -->|Data| D[AI Engine (ML + LLM)]
-    D -->|Insights, Summaries| E[Firebase AI Reports]
-    B --> F[Manual/Scripted Data Reading]
-    F -.->|GPIO| A
-```
-
 ---
 
 # Folder Structure
